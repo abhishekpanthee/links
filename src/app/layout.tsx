@@ -4,6 +4,11 @@ import type { Metadata, Viewport } from 'next'
 import Footer from '@/components/footer'
 import '@/styles/globals.css'
 import grid from './grid.svg'
+import {
+  registerGTM,
+  registerMicrosoftClarity,
+  
+} from '../utils/tracking.utils';
 
 type RootLayoutProps = {
   children: React.ReactNode
@@ -52,7 +57,10 @@ export const metadata: Metadata = {
     'abhishek panthee',
     'abhishek social media',
     'abhisheklinks',
-    'abhishek panthi'
+    'abhishek panthi',
+    'abishek',
+    'abisek panthi',
+    'abhishek',
   ],
   creator: 'abhishekpanthee',
   openGraph: {
@@ -111,13 +119,8 @@ const RootLayout = (props: RootLayoutProps) => {
   return (
     <html lang='en-US' className={GeistSans.variable}>
       <head>
-        <script type="text/javascript">
-          {`(function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-          })(window, document, "clarity", "script", "nlxuqpvtrj");`}
-        </script>
+      {registerMicrosoftClarity()}
+          {registerGTM()}
       </head>
       <body className='relative bg-[#020202] font-sans text-white'>
         <div
