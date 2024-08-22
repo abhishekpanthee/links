@@ -14,7 +14,7 @@ export const registerGTM = () => {
         {/* Google Tag Manager */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${
-            process.env.GOOGLE_TAG_MANAGER_UID ?? 'GTM-KDHSQ6Q5'
+            process.env.GOOGLE_TAG_MANAGER_UID ?? 'GTM-MRHFDQ29'
           }`}
         />
         <Script id="google-analytics">
