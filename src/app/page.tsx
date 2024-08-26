@@ -13,14 +13,19 @@ import {
   SiX,
   SiYoutube
 } from 'react-icons/si'
-
+import { FaPenNib } from "react-icons/fa6";
 import Spotlight from '@/components/spotlight'
 import PrimaryLinks from './primary-links'
 
 const links = [
+    {
+      icon: <FiBook  className='text-zinc-300' />,
+      title: 'Tech Blogs',
+      url: 'https://blogs.abhishekpanthee.com.np/'
+    },
   {
-    icon: <FiBook className='text-zinc-300' />,
-    title: 'Blog',
+    icon: <FaPenNib className='text-zinc-300' />,
+    title: 'Poems',
     url: 'https://abhishekpanthee.com.np/posts'
   },
   {
@@ -40,6 +45,11 @@ const links = [
   },
   {
     icon: <SiInstagram className='text-zinc-300' />,
+    title: 'codecrumbs404',
+    url: 'https://www.instagram.com/codecrumbs404/'
+  },
+  {
+    icon: <SiInstagram className='text-zinc-300' />,
     title: 'Instagram',
     url: 'https://www.instagram.com/abhishek.panthee/'
   },
@@ -51,7 +61,7 @@ const links = [
   {
     icon: <SiYoutube className='text-zinc-300' />,
     title: 'YouTube',
-    url: 'https://www.youtube.com/@abhishekpanthee1'
+    url: 'https://www.youtube.com/@codecrumbs404'
   },
   {
     icon: <SiReddit className='text-zinc-300' />,
