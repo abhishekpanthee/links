@@ -8,14 +8,14 @@ const World = dynamic(() => import("../globe/globebase").then((m) => m.World), {
 
 export function GlobeDemo() {
   const globeConfig = {
-    pointSize: 4,
+    pointSize: 2,
     globeColor: "#062056",
     showAtmosphere: true,
     atmosphereColor: "#FFFFFF",
     atmosphereAltitude: 0.1,
     emissive: "#062056",
-    emissiveIntensity: 0.5,
-    shininess: 1.2,
+    emissiveIntensity: 0.9,
+    shininess: 1.9,
     polygonColor: "rgba(255,255,255,0.7)",
     ambientLight: "#38bdf8",
     directionalLeftLight: "#ffffff",
@@ -23,8 +23,8 @@ export function GlobeDemo() {
     pointLight: "#ffffff",
     arcTime: 1000,
     arcLength: 0.9,
-    rings: 1,
-    maxRings: 3,
+    rings: 3,
+    maxRings: 6,
     initialPosition: { lat: 22.3193, lng: 114.1694 },
     autoRotate: true,
     autoRotateSpeed: 0.5,
