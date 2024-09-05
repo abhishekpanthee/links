@@ -16,6 +16,7 @@ import {
 import { FaPenNib } from "react-icons/fa6";
 import Spotlight from '@/components/spotlight'
 import PrimaryLinks from './primary-links'
+import { GlobeDemo } from '@/components/globe/globe';
 
 const links = [
     {
@@ -104,11 +105,13 @@ const HomePage = () => {
           className='rounded-full'
           priority
         />
+         <p className='text-[#a1a1a1] justify-center'>Available To connect Everywhere</p>
+<GlobeDemo/>
         <h1 className='text-xl font-semibold'>Abhishek Panthee</h1>
         <p className='text-[#a1a1a1]'>Cyber-Security Analyst</p>
       </div>
       <PrimaryLinks />
-      <div className='flex flex-col gap-4 py-3'>
+      <div className='flexflex-col gap-4 py-3'>
         {links.map((link) => {
           const { icon, title, url } = link
 
